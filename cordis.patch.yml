@@ -1,0 +1,8 @@
+# Bundle del panel de mando.
+#
+# Una fila en la raiz del perfil: el Host registra las rutas /api/cg-panel/* en
+# el webServer del mismo origen (sin CORS) y el navegador pinta el panel en su
+# slot `main`, con un icono propio en el sidebar.
+- insert:
+    - id: cg-panel
+      name: 'cg-panel'

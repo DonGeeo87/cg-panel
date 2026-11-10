@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Panel de mando",
+    "description": "Panel que se abre al iniciar: que proyecto seguir, salud de la laptop, respaldos de memoria y estado de la flota, leidos localmente desde DSH."
+  }
+}

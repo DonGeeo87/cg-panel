@@ -1,0 +1,64 @@
+{
+  "name": "cg-panel",
+  "version": "1.0.0",
+  "description": "Command center for DeepSeek Harness on Windows: which project to pick up next, laptop health, memory backups and fleet status, in a panel that opens on startup.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "lib",
+    "scripts",
+    "test",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "bundle",
+    "plugin",
+    "dashboard",
+    "workspaces",
+    "monitoring",
+    "ntfy"
+  ],
+  "license": "MIT",
+  "author": "Giorgio Interdonato (DonGeeo87)",
+  "homepage": "https://github.com/DonGeeo87/cg-panel#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DonGeeo87/cg-panel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DonGeeo87/cg-panel/issues"
+  },
+  "os": [
+    "win32"
+  ],
+  "engines": {
+    "node": ">=18",
+    "dsh": ">=0.2.1-rc.2 <0.3.0-0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  }
+}
